@@ -9,7 +9,13 @@
 	background-repeat:no-repeat;
 	background-size: cover;
 	background-position:left;
+	float: left;
+}
+#logindiv{
 	float: right;
+}
+.login-text{
+	color: blue;
 }
 #body {
 	max-width: 100%;
