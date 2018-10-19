@@ -29,10 +29,10 @@
 	margin-top: 20px;
 	text-align: center;
 }
-#info {
+#user {
 	margin:60px auto;
 	text-align: center;
-	font-weight: 900;
+	
 }
 #input {
 	width: 40%;
@@ -49,10 +49,20 @@
 	border-radius: 3px;
 
 }
-#button p {
+#button a {
 	color: #fff;
 	font-weight: 900;
+	font-size: 15px
 }
-#info:hover {
+#user a:hover {
 	text-decoration: underline;
+}
+#button a:link {
+	text-decoration: none;
+	color: #000;
+}
+#user a:link {
+	text-decoration: none;
+	color:#000;
+	font-weight: 900;
 }
