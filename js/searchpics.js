@@ -1,7 +1,3 @@
-$("button").click(function(){
-   getpics();
-});
-
 function getpics () {
 	key = $('.input').html();
 	$.ajax(
@@ -36,4 +32,7 @@ function getpics () {
 		}
 	});
 }
-getpics();
+
+$("#search").click(function(){
+   getpics();
+});
