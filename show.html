@@ -118,6 +118,37 @@
 		    background: #000;
 		    color: #fff;
 		}
+		#img{
+			display: inline-block;
+			margin-right: 10px;
+		} 
+		#img img {
+			width: 120px;
+			height: 80px;
+		}
+		#search {
+			background-color: #000;
+			width: 130px;
+			height: 40px;
+			border-radius: 3px;
+		}
+		#input {
+			width: 50%;
+			height: 40px;
+			display: inline-block;
+		}
+		#user {
+			display: inline-block;
+			float: right;
+			width: 20%;
+			margin-top: 15px;
+		}
+		#user img {
+			width: 55px;
+			width: 55px;
+			border-radius: 30px;
+			border: 1px #585858 solid;
+		}
 		@media only screen and (max-width:990px){
 		    .box{ margin-bottom: 30px; }
 		}
@@ -126,12 +157,13 @@
 <body>
 	<div class="htmleaf-container">
 		<header class="htmleaf-header">
-			<div style="background: #000;border-radius: 200px"><h1><span>Animation material collection system</span></h1>
-				<input type="" name="" id="input" value="" style="color: #000">
-				<button id='search' style="background-color: #fff;border-radius: 5px;margin:10px"><p style="color: #000">search</p></button>
-			</div>
-			<div class="htmleaf-links">
-			</div>
+				<div id="img">
+					<a href="search.html"><img src="images/no-bg-index.png"></a>
+				</div>
+				<input type="" name="" id="input" value="">
+				<button id='search' onmouseover="this.style.backgroundColor='#303030';"onmouseout="this.style.backgroundColor='#000'"><a style="color: #fff">search</a></button>
+				<!-- <div id="user"><a href="#" style="color: #000">个人中心</a></div> -->
+				<div id="user"><a href="#"><img src="images/favicon.jpg"></a></div>
 		</header>
 
 		<div class="demo">

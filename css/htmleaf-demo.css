@@ -74,29 +74,10 @@ body{
 .bgcolor-20{ background: #494A5F;color: #D5D6E2;}
 /* Header */
 .htmleaf-header{
-	padding: 1em 190px 1em;
-	letter-spacing: -1px;
-	text-align: center;
+	padding: 5px 5px 5px 30px;
+	/*letter-spacing: -1px;*/
 	/*background: #66677c;*/
-	background: #fff;
-	border-bottom:solid #000;
-	border-bottom-style:double;
-}
-.htmleaf-header h1 {
-	color: #fff;
-	/*color: #D5D6E2;*/
-	font-weight: 600;
-	font-size: 2em;
-	line-height: 1;
-	margin-bottom: 0;
-}
-.htmleaf-header h1 span {
-	color: #fff;
-	display: block;
-	font-size: 60%;
-	font-weight: 400;
-	padding: 0.8em 0 0.5em 0;
-	/*color: #c3c8cd;*/
+	background: #f6f6f6;
 }
 /*nav*/
 .htmleaf-demo a{color: #fff;text-decoration: none;}

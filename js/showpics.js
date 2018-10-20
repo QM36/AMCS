@@ -7,9 +7,13 @@ getpics(key);
 
 $("#search").click(function() {
 	key = $("#input")[0].value;
-	key = decodeURIComponent(key);
-	console.log("搜索关键词是："+key);
-	getpics(key);
+	if (key == '') {
+		alert("请输入关键字");
+	}else {
+		key = decodeURIComponent(key);
+		console.log("搜索关键词是："+key);
+		getpics(key);
+	}
 });
 function getpics (key) {
 	$.ajax(
