@@ -8,7 +8,6 @@ getpics(key);
 $("#search").click(function() {
 	key = $("#input")[0].value;
 	if (key == '') {
-		alert("请输入关键字");
 	}else {
 		key = decodeURIComponent(key);
 		console.log("搜索关键词是："+key);
@@ -25,7 +24,7 @@ function getpics (key) {
 			var html = "";
 			for(var i = 0; i < response.data.length; i++) {
 			html += `<div class="col-md-4 col-sm-6 ">
-		                    <div class="box">
+		                    <div  id="pics" class="box">
 		                        <img src=${response.data[i].url}>
 		                        <div class="box-content">
 		                            <div class="box-inner-content">
@@ -33,7 +32,7 @@ function getpics (key) {
 		                                <span class="post">Web Developer</span>
 		                                <ul class="icon">
 		                                    <li><a class="fa fa-search" href="#"></a></li>
-		                                    <li><a class="fa fa-link" href="#"></a></li>
+		                                    <li><a class="fa fa-link" href="${response.data[i].url}"></a></li>
 		                                </ul>
 		                            </div>
 		                        </div>
@@ -52,4 +51,18 @@ function getpics (key) {
 
 })();
 
-
+// <div id="pics" class="col-md-4 col-sm-6 ">
+// 		                    <div class="box">
+// 		                        <img src=${response.data[i].url}>
+// 		                        <div class="box-content">
+// 		                            <div class="box-inner-content">
+// 		                                <h3 class="title">Williamson</h3>
+// 		                                <span class="post">Web Developer</span>
+// 		                                <ul class="icon">
+// 		                                    <li><a class="fa fa-search" href="#"></a></li>
+// 		                                    <li><a class="fa fa-link" href="#"></a></li>
+// 		                                </ul>
+// 		                            </div>
+// 		                        </div>
+// 		                    </div>
+// 		                </div>
