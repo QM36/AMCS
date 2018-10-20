@@ -8,18 +8,23 @@
 	background-image: url(.././images/logo2.jpg);
 	background-repeat:no-repeat;
 	background-size: cover;
-	background-position:left;
 	float: left;
 }
 #logindiv{
 	float: right;
+	margin-right: 20px;
 }
 .login-text{
-	color: blue;
+	color: #000;
+	text-decoration: none;
+	font-weight: 900;
+}
+.login-text:hover{
+	text-decoration: underline;
 }
 #body {
 	max-width: 100%;
-    margin: 30px auto; 
+    margin: 50px auto; 
 }
 #picdiv {
 	margin:0 auto;
@@ -34,11 +39,6 @@
 	margin-left: auto;
 	margin-top: 20px;
 	text-align: center;
-}
-#user {
-	margin:60px auto;
-	text-align: center;
-	
 }
 #input {
 	width: 40%;
@@ -60,15 +60,11 @@
 	font-weight: 900;
 	font-size: 15px
 }
-#user a:hover {
-	text-decoration: underline;
-}
+
 #button a:link {
 	text-decoration: none;
 	color: #000;
 }
-#user a:link {
-	text-decoration: none;
-	color:#000;
-	font-weight: 900;
+#searchdiv :hover {
+    box-shadow: 0 0 1px #000;
 }

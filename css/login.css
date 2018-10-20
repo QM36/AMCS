@@ -32,6 +32,9 @@
     text-align: center;
     color: black;
     border: 1px solid #cacaca;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #000;
+    
 }
 .image{
     width: 150px;
