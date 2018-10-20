@@ -17,6 +17,7 @@
 	height: 40px;
 	display: inline-block;
 	color: #585858;
+	margin-right: 20px;
 }
 #user {
 	display: inline-block;
@@ -34,4 +35,11 @@
 	height: 200px;
 	margin-bottom: 50px;
 	box-shadow: 10px 10px 5px #888888;
+}
+#manageuser {
+	float: right;
+	width: 100px;
+	height: 100px;
+	border: 1px #000 solid;
+	color: #000;
 }

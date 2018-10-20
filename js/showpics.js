@@ -32,7 +32,7 @@ function getpics (key) {
 		                                <span class="post">Web Developer</span>
 		                                <ul class="icon">
 		                                    <li><a class="fa fa-search" href="#"></a></li>
-		                                    <li><a class="fa fa-link" href="${response.data[i].url}"></a></li>
+		                                    <li><a class="fa fa-link" href="${response.data[i].url}" target="blank"></a></li>
 		                                </ul>
 		                            </div>
 		                        </div>
@@ -48,21 +48,11 @@ function getpics (key) {
 		}
 	});
 }
+function mouseover(argument) {
+	// body...
+}
+function mouseout(argument) {
+	// body...
+}
 
 })();
-
-// <div id="pics" class="col-md-4 col-sm-6 ">
-// 		                    <div class="box">
-// 		                        <img src=${response.data[i].url}>
-// 		                        <div class="box-content">
-// 		                            <div class="box-inner-content">
-// 		                                <h3 class="title">Williamson</h3>
-// 		                                <span class="post">Web Developer</span>
-// 		                                <ul class="icon">
-// 		                                    <li><a class="fa fa-search" href="#"></a></li>
-// 		                                    <li><a class="fa fa-link" href="#"></a></li>
-// 		                                </ul>
-// 		                            </div>
-// 		                        </div>
-// 		                    </div>
-// 		                </div>
