@@ -32,14 +32,33 @@
 	border: 1px #585858 solid;
 }
 #pics {
-	height: 200px;
-	margin-bottom: 50px;
+	height: 230px;
+	margin-bottom: 30px;
 	box-shadow: 10px 10px 5px #888888;
 }
 #manageuser {
-	float: right;
 	width: 100px;
-	height: 100px;
-	border: 1px #000 solid;
-	color: #000;
+	height: 75px;
+	border: 1px #f6f6f6 solid;
+	border-radius: 5px;
+	z-index: 999999;
+	position:absolute;
+	right:210px;
+	top:80px;
+	box-shadow: 1px 0 1px #888888;
+	background-color: #f6f6f6;
+	display:none
+}
+#bg {
+	height: 35px;
+	background-color: #888888;
+	opacity:0.6;
+}
+.managebt{
+	width: 99px;
+	height: 30px;
+	border-color: #f6f6f6;
+	background-color: #f6f6f6;
+	color: #5d666f;
+	font-size: 13px;
 }

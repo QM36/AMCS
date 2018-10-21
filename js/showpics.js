@@ -28,8 +28,7 @@ function getpics (key) {
 		                        <img src=${response.data[i].url}>
 		                        <div class="box-content">
 		                            <div class="box-inner-content">
-		                                <h3 class="title">Williamson</h3>
-		                                <span class="post">Web Developer</span>
+		                                <div id="bg"class="post">${response.data[i].decribe}</div>
 		                                <ul class="icon">
 		                                    <li><a class="fa fa-search" href="#"></a></li>
 		                                    <li><a class="fa fa-link" href="${response.data[i].url}" target="blank"></a></li>
@@ -48,11 +47,14 @@ function getpics (key) {
 		}
 	});
 }
-function mouseover(argument) {
-	// body...
-}
-function mouseout(argument) {
-	// body...
-}
+$("#user").mouseover(function(){
+	$("#manageuser").show();
+});
+$("#manageuser").mouseover(function(){
+	$("#manageuser").show();
+});
+$("#manageuser").mouseout(function(){
+	$("#manageuser").hide();
+});
 
 })();
