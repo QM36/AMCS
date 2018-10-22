@@ -19,17 +19,11 @@
 	color: #585858;
 	margin-right: 20px;
 }
-#user {
-	display: inline-block;
-	float: right;
-	width: 20%;
-	margin-top: 15px;
-}
-#user img {
-	width: 55px;
+#favicon {
 	width: 55px;
 	border-radius: 30px;
 	border: 1px #585858 solid;
+	margin:0 0 5px 25px;
 }
 #pics {
 	height: 230px;
@@ -43,11 +37,9 @@
 	border-radius: 5px;
 	z-index: 999999;
 	position:absolute;
-	right:210px;
-	top:80px;
 	box-shadow: 1px 0 1px #888888;
 	background-color: #f6f6f6;
-	display:none
+	display:none;
 }
 #bg {
 	height: 35px;
@@ -55,10 +47,16 @@
 	opacity:0.6;
 }
 .managebt{
-	width: 99px;
+	width: 98px;
 	height: 30px;
-	border-color: #f6f6f6;
+	border:none;
 	background-color: #f6f6f6;
 	color: #5d666f;
 	font-size: 13px;
+}
+#user {
+	float: right;
+	display: inline-block;
+	margin-top: 15px;
+	margin-right: 220px;
 }

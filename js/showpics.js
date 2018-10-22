@@ -1,9 +1,13 @@
 (function () {
 
-var key = window.location.search.match(/(?!u)(key=)([^&]+)/)[2];
-key = decodeURIComponent(key);
-console.log("搜索关键词是："+key);
-getpics(key);
+var key = window.location.search.match(/(?!u)(key=)([^&]+)/);
+if(!key) {
+	window.location.href = "index.html"
+}else {
+	key = decodeURIComponent(key[2]);
+	console.log("搜索关键词是："+key);
+	getpics(key);
+}
 
 $("#search").click(function() {
 	key = $("#input")[0].value;
@@ -47,7 +51,7 @@ function getpics (key) {
 		}
 	});
 }
-$("#user").mouseover(function(){
+$("#favicon").mouseover(function(){
 	$("#manageuser").show();
 });
 $("#manageuser").mouseover(function(){
@@ -56,5 +60,4 @@ $("#manageuser").mouseover(function(){
 $("#manageuser").mouseout(function(){
 	$("#manageuser").hide();
 });
-
 })();
