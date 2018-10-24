@@ -1,5 +1,5 @@
 # AMCS
-动漫素材收集系统 [Animation material collection system](http://qm36mmz.xyz/AMCS/search.html)
+动漫素材收集系统 [Animation material collection system](http://qm36mmz.xyz/AMCS)
 
 #### 10.19 
 登录界面初版
@@ -19,4 +19,3 @@
 #### 10 22
 * 头像框交互适应各种屏幕
 * 搜索页面不带参数跳转首页
-

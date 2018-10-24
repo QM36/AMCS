@@ -5,6 +5,7 @@ if(!key) {
 	window.location.href = "index.html"
 }else {
 	key = decodeURIComponent(key[2]);
+	$("input").val(key);
 	console.log("搜索关键词是："+key);
 	getpics(key);
 }
@@ -14,6 +15,7 @@ $("#search").click(function() {
 	if (key == '') {
 	}else {
 		key = decodeURIComponent(key);
+		$("input").val(key);
 		console.log("搜索关键词是："+key);
 		getpics(key);
 	}
