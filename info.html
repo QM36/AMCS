@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" type="text/css" href="css/info.css" media="screen">
+    <script src="js/info.js" type="text/javascript"></script>
+    <script src="js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">
+            <img src="images/logo2.jpg">
+        </a>
+    </div>
+    <div class="info-content">
+        <div class="info-row-div" onmouseover="mouseover()" onmouseout="mouseout()">
+            <label>头像</label>
+            <div id="change-head-image">
+                <img src="images/favicon1.jpg">
+                <span id="change-image-span">修改头像</span>
+            </div>
+        </div>
+        <div class="info-row-div">
+            <label class="request-input">昵称</label>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+        <div class="info-row-div">
+            <label>个人介绍</label>
+            <div>
+                <textarea rows="5" cols="50"></textarea>
+            </div>
+        </div>
+        <div class="footer">
+            <button>保存</button>
+            <span id="change-psw-span" onmouseover="onchangepsw()">修改密码</span>
+        </div>
+    </div>
+</body>
+</html>

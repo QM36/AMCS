@@ -10,9 +10,14 @@
 	background-size: cover;
 	float: left;
 }
-#logindiv{
+.logindiv{
 	float: right;
 	margin-right: 20px;
+	color: black;
+}
+.logindiv a{
+	font-weight: bold;
+	color: black;
 }
 .login-text{
 	color: #000;
