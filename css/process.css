@@ -1,19 +1,28 @@
+#canvas {
+	height: 600px;
+	border: 2px solid transparent;
+	border-bottom: 4px solid #AAA;
+}
 #canvason  {
 	height: 530px;
 	position: absolute;
-	left: 20px;
-	top: 20px;
+	left: 100px;
+	top: 120px;
 	z-index: 9999;
 }
 #canvasunder  {
 	height: 530px;
 	position: absolute;
-	left: 20px;
-	top: 20px;
+	left: 100px;
+	top: 120px;
 	z-index: -1;
 }
+#text {
+	display: inline-block;
+	color: #888888;
+}
 #btn {
-	margin-top: 570px;
+	margin-top: 50px;
 	margin-left: 250px;
 }
 #btn button {
@@ -27,7 +36,7 @@
 	margin-right: 20px;
 	opacity: 0.5;
 }
-#btn input {
+#open {
 	width: 100px;
 	height: 40px;
 	color: #fff;
@@ -36,8 +45,18 @@
 	font-size: 15px;
 	border-radius: 5px;
 	margin-right: 20px;
-	opacity: 0.5;
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
 }
+#open input {
+	position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+}
+
 #size {
 	margin-left: 250px;
 	margin-top: 20px;

@@ -12,6 +12,11 @@
 	height: 40px;
 	border-radius: 3px;
 }
+#search a {
+	color: #fff;
+	font-weight: 900;
+	font-size: 15px;
+}
 #input {
 	width: 50%;
 	height: 40px;

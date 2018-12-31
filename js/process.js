@@ -11,7 +11,7 @@
 
 	var down = false;
 	var brush = true;
-	var size = 10;
+	var size = 10; //控制画笔与橡皮的大小
 	var color = "red";
 	var imageUrl = key;
 	var ratio;
@@ -30,9 +30,9 @@
 		contextOn.strokeStyle = color;
 		if(brush) {
 			contextOn.beginPath();
-			contextOn.moveTo((x-20) * ratio, (y-20) * ratio);
+			contextOn.moveTo((x-100) * ratio, (y-120) * ratio);
 		} else {
-			contextOn.clearRect((x-20-size/2) * ratio, (y-20-size/2) * ratio , size * ratio, size * ratio);
+			contextOn.clearRect((x-100-size/2) * ratio, (y-120-size/2) * ratio , size * ratio, size * ratio);
 		}
 	});
 	$("#canvason").mouseup(function(event) {
@@ -45,10 +45,10 @@
 			contextOn.lineWidth = size * ratio;
 			contextOn.strokeStyle = color;
 			if (brush) {
-				contextOn.lineTo((x-20) * ratio, (y-20) * ratio);
+				contextOn.lineTo((x-100) * ratio, (y-120) * ratio);
 				contextOn.stroke();
 			} else {
-				contextOn.clearRect((x-20-size/2) * ratio, (y-20-size/2) * ratio , size * ratio, size * ratio);
+				contextOn.clearRect((x-100-size/2) * ratio, (y-120-size/2) * ratio , size * ratio, size * ratio);
 			}
 		}
 	});
@@ -74,7 +74,7 @@
 				drawingUnder.height = image.height;
 				drawingOn.width = image.width;
 				drawingOn.height = image.height;
-				ratio = image.height / 530;
+				ratio = image.height / 530; //530是画布的高度可以自定义
 				contextUnder.drawImage(image, 0, 0, image.width, image.height);
 				$("#clean").click(function() {
 					contextOn.clearRect(0, 0, image.width, image.height);

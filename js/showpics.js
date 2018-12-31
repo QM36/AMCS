@@ -36,7 +36,7 @@ function getpics (key) {
 		                            <div class="box-inner-content">
 		                                <div id="bg"class="post">${response.data[i].decribe}</div>
 		                                <ul class="icon">
-		                                    <li><a class="fa fa-search" href="process.html?key=${response.data[i].url}"></a></li>
+		                                    <li><a class="fa fa-search" href="process.html?key=${response.data[i].url}" target="blank"></a></li>
 		                                    <li><a class="fa fa-link" href="${response.data[i].url}" target="blank"></a></li>
 		                                </ul>
 		                            </div>
