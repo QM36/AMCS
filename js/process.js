@@ -4,6 +4,7 @@
 		window.location.href = "index.html"
 	}else {
 		key = decodeURIComponent(key[2]);
+		console.log("key: " + key);
 	}
 
 	var drawingUnder = document.getElementById("canvasunder");
@@ -82,6 +83,18 @@
 			}
 		}
 	}
+	function clearPic (imageUrl) {
+	    var image = new Image();
+	    var width, height;
+	    var contextUnder;
+	    image.src = imageUrl;
+	    image.onload = function () {
+            width = image.width;
+            height = image.height;
+            contextUnder = drawingUnder.getContext("2d");
+            contextUnder.clearRect(0, 0, width, height);
+        }
+    }
 	$("#open").change(function(event) {
 		var file = event.target
 		if (!file.files || !file.files[0]) {
@@ -90,7 +103,7 @@
         var reader = new FileReader();
         reader.onload = function (evt) {
         	imageUrl = evt.target.result;//这里是base64编码
-            showPic (imageUrl); 
+            showPic (imageUrl);
         }
         reader.readAsDataURL(file.files[0]);
 	});
@@ -106,4 +119,48 @@
 		$(`#${event.target.id}`).css("opacity", "1");
 		console.log(event.target.id);
 	});
+	$("#empty").click(function () {
+	    showPic(imageUrl);
+	    drawingUnder.className = "";
+    })
+    $("#pencil").click(function () {
+        clearPic(imageUrl);
+        drawingUnder.className = "pencil-effect";
+        drawingUnder.style.backgroundImage = "url(" + imageUrl + "), url(" + imageUrl + ")";
+    });
+    $("#emboss").click(function () {
+        clearPic(imageUrl);
+        drawingUnder.className = "emboss-effect";
+        drawingUnder.style.backgroundImage = "url(" + imageUrl + "), url(" + imageUrl + "), url(" + imageUrl + ")";
+    });
+    $("#chalkboard").click(function () {
+        clearPic(imageUrl);
+        drawingUnder.className = "chalkboard-effect";
+        drawingUnder.style.backgroundImage = "url(" + imageUrl + "), url(" + imageUrl + ")";
+    });
+    $("#colored-chalkboard").click(function () {
+        clearPic(imageUrl);
+        drawingUnder.className = "colored-chalkboard-effect";
+        drawingUnder.style.backgroundImage = "url(" + imageUrl + "), url(" + imageUrl + "), url(" + imageUrl + ")";
+    })
+    $("#flannel").click(function () {
+        clearPic(imageUrl);
+        drawingUnder.className = "flannel-effect";
+        drawingUnder.style.backgroundImage = "url(" + imageUrl + "), url(" + imageUrl + "), url(" + imageUrl + ")";
+    });
+    $("#low-ink-x").click(function () {
+        clearPic(imageUrl);
+        drawingUnder.className = "low-ink-x-effect";
+        drawingUnder.style.backgroundImage = "url(" + imageUrl + "), url(" + imageUrl + "), url(" + imageUrl + ")";
+    });
+    $("#low-ink-y").click(function () {
+        clearPic(imageUrl);
+        drawingUnder.className = "low-ink-y-effect";
+        drawingUnder.style.backgroundImage = "url(" + imageUrl + "), url(" + imageUrl + "), url(" + imageUrl + ")";
+    });
+    $("#collage").click(function () {
+        clearPic(imageUrl);
+        drawingUnder.className = "collage-effect";
+        drawingUnder.style.backgroundImage = "url(" + imageUrl + "), url(" + imageUrl + "), url(" + imageUrl + "),url(" + imageUrl + "), url(" + imageUrl + "), url(" + imageUrl + ")";
+    });
 })();

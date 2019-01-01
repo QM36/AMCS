@@ -1,6 +1,12 @@
-// 判断合法性
-function judge(password, repassword) {
-    if(password != repassword){
+// 判断输入合法
+function judge(userName, password, repassword) {
+    if (userName == ""){
+        alert("用户名不能为空。");
+        return false;
+    }else if(password == "" || repassword == ""){
+        alert("密码不能为空。");
+        return false
+    }else if(password != repassword){
         alert("输入密码不一致。");
         $("#password").val("");
         $("#re-password").val("");
@@ -19,7 +25,7 @@ window.onload = function () {
         // test
         console.log("user: " + userName + ", psw: " + password + ",re: " + repassword);
 
-        if(judge(password, repassword)){
+        if(judge(userName, password, repassword)){
             // set storage
             window.localStorage.setItem('userName', userName);
             window.localStorage.setItem('password', password);

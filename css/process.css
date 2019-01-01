@@ -99,7 +99,7 @@
 	margin-top: 20px;
 }
 #filter button {
-	width: 100px;
+	width: 110px;
 	height: 40px;
 	color: #fff;
 	background: #000;
@@ -108,3 +108,156 @@
 	border-radius: 5px;
 	margin-right: 20px;
 }
+
+.pencil-effect {
+	background-size: cover;
+	background-position: center;
+}
+@supports (filter: invert(1)) and (background-blend-mode: difference) {
+    .pencil-effect {
+        background-blend-mode: difference;
+        background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+        filter: brightness(2) invert(1) grayscale(1);
+        box-shadow: inset 0 0 0 1px black;
+    }
+}
+
+/*.watercolor-effect {
+    background-size: cover;
+    background-position: center;
+}
+@supports (filter: blur(2px)) and (mix-blend-mode: multiply) {
+    .watercolor-effect {
+        position: relative;
+        overflow: hidden;
+    }
+    .watercolor-effect:before, .watercolor-effect:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+    }
+    .watercolor-effect:before {
+        background-blend-mode: difference;
+        background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+        filter: brightness(2) invert(1) grayscale(1);
+        box-shadow: inset 0 0 0 1px black;
+    }
+    .watercolor-effect:after {
+        background-position: center;
+        mix-blend-mode: multiply;
+        filter: brightness(1.3) blur(2px) contrast(2);
+    }
+}*/
+
+.emboss-effect {
+    background-size: cover;
+    background-position: center;
+}
+@supports (filter: invert(1)) and (background-blend-mode: difference, screen) {
+    .emboss-effect {
+        background-blend-mode: difference, screen;
+        background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px), center;
+        filter: brightness(2) invert(1) grayscale(1);
+    }
+}
+
+.chalkboard-effect {
+    background-size: cover;
+    background-position: center;
+}
+@supports (filter: grayscale(1)) and (background-blend-mode: difference) {
+    .chalkboard-effect {
+        background-blend-mode: difference;
+        background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px);
+        filter: brightness(1.5) grayscale(1);
+    }
+}
+
+.colored-chalkboard-effect {
+    background-size: cover;
+    background-position: center;
+}
+@supports (filter: brightness(2)) and (background-blend-mode: color, difference) {
+    .colored-chalkboard-effect {
+        background-size: cover;
+        background-position: calc(50% - 1px) calc(50% - 1px), calc(50% + 1px) calc(50% + 1px), center;
+        background-blend-mode: color, difference;
+        filter: brightness(2);
+    }
+}
+
+.flannel-effect {
+    background-size: cover;
+    background-position: center;
+}
+@supports (background-blend-mode: overlay) {
+    .flannel-effect {
+        background-position: center;
+        background-size: 100%, 100000% 100%, 100% 100000%;
+        background-blend-mode: overlay;
+    }
+}
+
+.low-ink-x-effect {
+    background-size: cover;
+    background-position: center;
+}
+@supports (background-blend-mode: screen, overlay) {
+    .low-ink-x-effect {
+        background-size: 100% 100%, 10000% 100%;
+        background-blend-mode: screen, overlay;
+    }
+}
+
+.low-ink-y-effect {
+    background-size: cover;
+    background-position: center;
+}
+@supports (background-blend-mode: screen, overlay) {
+    .low-ink-y-effect {
+        background-size: 100% 100%, 100% 1000%;
+        background-blend-mode: screen, overlay;
+    }
+}
+
+.collage-effect {
+    background-size: cover;
+    background-position: center;
+}
+@supports (background-blend-mode: overlay) {
+    .collage-effect {
+        background-size: 200%, 80%, 60%, 50%, 40%, 100%;
+        background-position: 50%, 80%, 30%, 0;
+        background-blend-mode: overlay;
+        background-repeat: no-repeat;
+    }
+}
+
+/*
+.airbrush-effect {
+    background-size: cover;
+    background-position: center;
+}
+@supports (filter: blur(5px) contrast(5)) and (mix-blend-mode: multiply) {
+    .airbrush-effect {
+        position: relative;
+        overflow: hidden;
+    }
+    .airbrush-effect:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: inherit;
+        filter: brightness(1.5) saturate(100) blur(5px) contrast(5);
+        mix-blend-mode: multiply;
+    }
+}*/

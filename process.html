@@ -11,6 +11,11 @@
 	<script src="js/jquery.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/showpics.css">
 	<link rel="stylesheet" type="text/css" href="css/process.css">
+	<script src="js/masonry.min.js"></script>
+	<script src="js/prism.min.js"></script>
+	<script src="js/clipboard.min.js"></script>
+	<script src="js/fastclick.js"></script>
+	<script src="js/sketch.js"></script>
 </head>
 <body>
 	<div class="htmleaf-container">
@@ -42,7 +47,7 @@
 					<input type="file"/>
 				</button>
 				
-				<button id="brush" style="opacity: 1">brush</button>
+				<button id="brush" style="opacity: 1 ">brush</button>
 				<button id="rubber">rubber</button>
 				<button id="clean" style="opacity: 1">clean</button>
 				<button id="download" style="opacity: 1">download</button>
@@ -61,11 +66,19 @@
 				<button id="black" style="background:black"></button>
 			</div>
 			<div id="filter">
-				<button id="">filter1</button>
-				<button id="">filter1</button>
-				<button id="">filter1</button>
-				<button id="">filter1</button>
-				<button id="">filter1</button>
+                <div>
+                    <button id="empty">原图</button>
+                    <button id="pencil">铅笔画</button>
+                    <button id="emboss">浮雕画</button>
+                    <button id="chalkboard">粉笔画</button>
+                    <button id="colored-chalkboard">彩色粉笔画</button>
+                </div>
+                <div>
+                    <button id="flannel">法兰绒巾</button>
+                    <button id="low-ink-x">水平缺墨打印</button>
+                    <button id="low-ink-y">垂直缺墨打印</button>
+                    <button id="collage">拼贴画</button>
+                </div>
 			</div>
 		</div>
 		</div>
