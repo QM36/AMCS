@@ -14,7 +14,7 @@ window.onload = function () {
     console.log("user: " + userName + ", psw: " + password);
 
     // 调整为已登录状态
-    if(userName != "" && password != ""){
+    if(userName != "" && password != "") {
         var oldDiv = $("div")[2];
         var newDiv = document.createElement("div");
         newDiv.innerHTML = "Welcome " + "<a href='info.html'>" + userName + "</a>" + " ! " + "<a onclick='logout()' href='javascript:void(0)'>退出</a>";
@@ -25,4 +25,3 @@ window.onload = function () {
         console.log("is null!");
     }
 }
-

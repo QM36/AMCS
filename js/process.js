@@ -22,7 +22,6 @@
 	if (drawingOn.getContext){
 		var contextOn = drawingOn.getContext("2d");
 	}
-
 	$("#canvason").mousedown(function(event) {
 		down = true;
 		x=event.pageX;
